@@ -27,9 +27,9 @@ const Banner = () => {
                     </p>
 
                     <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
-                        <button className="btn btn-primary rounded-full">Explore Products</button>
+                        <button className="btn btn-primary rounded-full cursor-pointer">Explore Products</button>
 
-                        <button className="btn btn-outline btn-primary rounded-full">
+                        <button className="btn btn-outline btn-primary rounded-full cursor-pointer">
                             <img src={playImg} alt="Banner image" />Watch Demo</button>
                     </div>
                 </div>

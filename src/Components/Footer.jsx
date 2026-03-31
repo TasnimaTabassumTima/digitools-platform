@@ -74,9 +74,9 @@ const Footer = () => {
                         <div>
                             <h3 className="text-zinc-400 font-semibold mb-6 text-lg">Social Links</h3>
                             <div className='flex flex-wrap gap-2'>
-                                <span className='bg-white rounded-full p-2'><i class="fa-brands fa-instagram"></i></span>
-                                <span className='bg-white rounded-full p-2'><i class="fa-brands fa-facebook"></i></span>
-                                <span className='bg-white rounded-full p-2'><i class="fa-brands fa-x-twitter"></i></span>
+                                <span className='bg-white rounded-full p-2 cursor-pointer'><i class="fa-brands fa-instagram"></i></span>
+                                <span className='bg-white rounded-full p-2 cursor-pointer'><i class="fa-brands fa-facebook"></i></span>
+                                <span className='bg-white rounded-full p-2 cursor-pointer'><i class="fa-brands fa-x-twitter"></i></span>
                             </div>
                         </div>
                     </div>
@@ -87,9 +87,9 @@ const Footer = () => {
                     <p>© 2026 Digitools. All rights reserved.</p>
 
                     <div className="flex gap-6">
-                        <a href="">Privacy Policy</a>
-                        <a href="">Terms of Service</a>
-                        <a href="">Cookies</a>
+                        <a className='cursor-pointer' href="">Privacy Policy</a>
+                        <a className='cursor-pointer' href="">Terms of Service</a>
+                        <a className='cursor-pointer' href="">Cookies</a>
                     </div>
                 </div>
         </footer>
