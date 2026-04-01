@@ -11,9 +11,9 @@ const Workflow = () => {
             <div className='space-y-4 text-center'>
                 <div className="flex flex-wrap justify-center gap-4 pt-4">
                     <button className='bg-white
-                     rounded-full p-4 font-bold cursor-pointer'><span className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>Explore Products</span></button>
+                     rounded-full p-4 font-bold hover:scale-105 duration-300 cursor-pointer'><span className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>Explore Products</span></button>
 
-                    <button className="border border-white text-white py-4 px-9 rounded-full cursor-pointer">View Pricing</button>
+                    <button className="border border-white text-white py-4 px-9 rounded-full hover:bg-violet-700 hover:scale-105 duration-300 cursor-pointer">View Pricing</button>
                 </div>
                 <p className='text-white/80'>14-day free trial • No credit card required • Cancel anytime</p>
             </div>

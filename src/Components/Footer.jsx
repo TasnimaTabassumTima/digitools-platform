@@ -74,9 +74,9 @@ const Footer = () => {
                         <div>
                             <h3 className="text-zinc-400 font-semibold mb-6 text-lg">Social Links</h3>
                             <div className='flex flex-wrap gap-2'>
-                                <span className='bg-white rounded-full p-2 cursor-pointer'><i class="fa-brands fa-instagram"></i></span>
-                                <span className='bg-white rounded-full p-2 cursor-pointer'><i class="fa-brands fa-facebook"></i></span>
-                                <span className='bg-white rounded-full p-2 cursor-pointer'><i class="fa-brands fa-x-twitter"></i></span>
+                                <span className='bg-white rounded-full p-2 hover:scale-105 duration-300 cursor-pointer'><i class="fa-brands fa-instagram"></i></span>
+                                <span className='bg-white rounded-full p-2 hover:scale-105 duration-300 cursor-pointer'><i class="fa-brands fa-facebook"></i></span>
+                                <span className='bg-white rounded-full p-2 hover:scale-105 duration-300 cursor-pointer'><i class="fa-brands fa-x-twitter"></i></span>
                             </div>
                         </div>
                     </div>
