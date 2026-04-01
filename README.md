@@ -1,16 +1,22 @@
 # Name : DigiTools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Discription
 
-Currently, two official plugins are available:
+This project is a digital tools platform that offers a variety of premium tools for productivity, design, content creation and career development. Users can choose from AI writing tools, design templates, stock assets, automation toolkits, resume builders, social media content kits and more. Each tool comes with unique features to help users save time, improve efficiency and create professionalq uality work.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Technology
 
-## React Compiler
+This project is built using modern web technologies to provide a fast, responsive and user-friendly experience:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **HTML5** – For structured and semantic web pages  
+- **Tailwind CSS** – For beautiful, responsive and utility-first styling  
+- **JavaScript (ES6+)** – For interactive and dynamic functionalities  
+- **React.js** – For building a fast, component-based user interface
 
-## Expanding the ESLint configuration
+# Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Dynamic Product Cards:** Products are fetched from a JSON API and displayed as individual cards. Users can add items to the cart directly from these cards.
+
+2. **Cart Management:** Users can add products to the cart, view the total price and delete items one by one. Each product can only be added once until it is deleted.
+
+3. **Payment Integration:** A payment button is included to proceed with the checkout process for all items in the cart.
