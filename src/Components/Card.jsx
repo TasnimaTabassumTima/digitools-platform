@@ -1,11 +1,30 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const Card = ({data, carts, setCarts}) => {
     const [isClicked, setIsClicked] = useState(false);
     const handleClicked = () => {
-        // isClicked === false && setCarts([...carts, data]);
         setIsClicked(isClicked === true ? false : true);
-        setCarts([...carts, data])
+        /* let exists = carts.some(cartItem => cartItem.id !== data.id)
+        if(exists === false && isClicked === false){
+            setCarts([...carts, data]);
+            toast.success("Product Added to Cart");
+            exists = true;
+        }
+        else{
+            toast.error("Product already exist in the cart");
+        } */
+        // setIsClicked(exists === false && setCarts([...carts, data]));
+        const isFind = carts.find(item => item.id === data.id);
+
+        if(isClicked === true) {
+            toast.error("Product already exist in the cart");
+        }
+        else {
+            toast.success("Product Added to Cart");
+            // setCarts([...carts, data])
+        }
+        
     }
     
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import cartIcon from '../assets/cart.png';
-const Navbar = () => {
+const Navbar = ({ carts }) => {
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -29,7 +29,12 @@ const Navbar = () => {
             </div>
             <div className="navbar-end gap-4">
                 <div className='flex gap-2'>
-                    <img className='text-[#101727] w-7 h-7 cursor-pointer' src={cartIcon} alt="" />
+                    <div className='relative'>
+                        {
+                        carts.length > 0 && <span className='bg-red-600 text-white rounded-[50%] h-4 w-4 flex justify-center items-center text-[9px] absolute left-4 -top-1'>{carts.length}</span>
+                        }
+                        <img className='text-[#101727] w-7 h-7 cursor-pointer' src={cartIcon} alt="" />
+                    </div>
                     <p className='font-semibold text-[#101727] cursor-pointer'>Login</p>
                 </div>
                 <a className="btn btn-primary rounded-full cursor-pointer">Get Started</a>

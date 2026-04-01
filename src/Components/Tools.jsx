@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Tools = ({setHide}) => {
+const Tools = ({setHide, carts}) => {
     const [activeTab, setActiveTab] = useState("Products");
     const handleTab = (value) => {
         setActiveTab(value);
@@ -19,7 +19,7 @@ const Tools = ({setHide}) => {
                 handleTab("Products")
                 }/>
 
-                <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Cart" 
+                <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Cart (${carts.length})`}
                 onClick={() => 
                 handleTab("Cart")
                 }/>

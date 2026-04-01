@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { cacheSignal } from 'react';
+import { toast } from 'react-toastify';
 
 const AddedCard = ({ carts, setCarts }) => {
     const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
     const handlePayment = () => {
         setCarts([]);
+        toast.success("Payment Successfull");
+    }
+    const handleDelete = (item) => {
+        const filtered = carts.some(dltItem => dltItem.id !== item.id)
+        setCarts(filtered);
+        toast.success("Product deleted");
     }
     return (
         <div className="max-w-[1200px] mx-auto p-10 space-y-6 border border-zinc-50 shadow">
@@ -25,7 +32,7 @@ const AddedCard = ({ carts, setCarts }) => {
                                                 <span>${item.price}</span>
                                             </div>
                                         </div>
-                                        <button className='text-[#FF3980] font-bold'>
+                                        <button onClick={() => handleDelete(item)} className='text-[#FF3980] font-bold'>
                                             Remove
                                         </button>
                                     </div>
