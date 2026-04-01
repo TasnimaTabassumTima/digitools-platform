@@ -1,32 +1,20 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
-const Card = ({data, carts, setCarts}) => {
+const Card = ({ data, carts, setCarts}) => {
     const [isClicked, setIsClicked] = useState(false);
     const handleClicked = () => {
-        setIsClicked(isClicked === true ? false : true);
-        /* let exists = carts.some(cartItem => cartItem.id !== data.id)
-        if(exists === false && isClicked === false){
-            setCarts([...carts, data]);
-            toast.success("Product Added to Cart");
-            exists = true;
-        }
-        else{
-            toast.error("Product already exist in the cart");
-        } */
-        // setIsClicked(exists === false && setCarts([...carts, data]));
-        const isFind = carts.find(item => item.id === data.id);
 
-        if(isClicked === true) {
+        const isFind = carts.find(item => item.id === data.id);
+        if (isFind) {
             toast.error("Product already exist in the cart");
+            return;
         }
-        else {
-            toast.success("Product Added to Cart");
-            // setCarts([...carts, data])
-        }
-        
+
+        toast.success("Product Added to Cart");
+        setCarts([...carts, data])
+        setIsClicked(true);
     }
-    
 
     return (
         <div className='border border-zinc-100 shadow p-6 '>
@@ -36,15 +24,8 @@ const Card = ({data, carts, setCarts}) => {
                         ? <span className='bg-[#FEF3C6] text-[#BB4D00] rounded-full py-2 px-3'>{data.tag}</span>
                         : data.tag === "Popular" ? <span className='bg-[#E1E7FF] text-[#9514FA] rounded-full py-2 px-3'>{data.tag}</span>
                             : <span className='bg-[#DBFCE7] text-[#0A883E] rounded-full py-2 px-3'>{data.tag}</span>
-
                 }
             </div>
-
-            {/*  <span className='bg-[#FEF3C6] text-[#BB4D00] rounded-full py-2 px-3'>{data.tag}</span> */}
-
-            {/*  <div className='flex justify-end'>
-                                <span className='bg-[#FEF3C6] text-[#BB4D00] rounded-full py-2 px-3'>{data.tag}</span>
-                            </div> */}
 
             <div className='space-y-4'>
                 <div className='border border-zinc-200 inline-block rounded-full p-4'>
@@ -58,7 +39,7 @@ const Card = ({data, carts, setCarts}) => {
                 <div className='font-bold text-2xl text-[#101727]'>${data.price}<span className='text-zinc-600 text-[16px] font-normal'>/{data.period}</span></div>
 
                 <div className='space-y-2 pb-12'>
-                    {data.features.map((value, index) => 
+                    {data.features.map((value, index) =>
                         <p key={index} className='flex gap-2 font-medium text-[#627382]'><i className="fa-solid fa-check text-green-400 text-xl"></i>{value}</p>
                     )}
                 </div>
@@ -66,18 +47,6 @@ const Card = ({data, carts, setCarts}) => {
                 <button onClick={() => handleClicked()} className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full w-full py-4 text-white font-bold hover:scale-105 duration-300 cursor-pointer'>
                     {isClicked === true ? "Added" : "Buy Now"}
                 </button>
-
-            {/* {
-                isClicked === true 
-                ? <button onClick={() => handleClicked()} className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full w-full py-4 text-white font-bold hover:scale-105 duration-300 cursor-pointer disabled={true}'>
-                    Added
-                </button> 
-                : <button onClick={() => handleClicked()} className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full w-full py-4 text-white font-bold hover:scale-105 duration-300 cursor-pointer disabled={false}'>
-                    Buy Now
-                </button>
-            } */}
-
-                
             </div>
         </div>
     );

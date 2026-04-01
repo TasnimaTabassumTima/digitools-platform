@@ -26,19 +26,19 @@ function App() {
   return (
     <>
       <div className=''>
-        <div className="max-w-[1200px] mx-auto">
+        {/* <div className="max-w-[1200px] mx-auto">
           <Navbar carts = {carts}/>
         </div>
 
-        {/* <div className="max-w-[1200px] mx-auto py-20">
+        <div className="max-w-[1200px] mx-auto py-20">
           <Banner />
-        </div> 
+        </div> */} 
 
         <div className="bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
           <Stats/>
-        </div> */}
+        </div>
 
-        <div className="max-w-[1200px] mx-auto ">
+        {/* <div className="max-w-[1200px] mx-auto ">
           <Tools setHide={setHide} carts = {carts}/>
         </div>
 
@@ -54,7 +54,7 @@ function App() {
         }
 
 
-         {/* <div className="max-w-[1200px] mx-auto py-28">
+         <div className="max-w-[1200px] mx-auto py-28">
           <Step />
         </div>
 
