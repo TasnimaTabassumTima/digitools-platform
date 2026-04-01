@@ -22,7 +22,7 @@ const Pricing = () => {
                         <p className='flex gap-2 font-medium text-[#627382]'><i className="fa-solid fa-check text-green-400 text-xl"></i>Community support</p>
                         <p className='flex gap-2 font-medium text-[#627382]'><i className="fa-solid fa-check text-green-400 text-xl"></i>1 project per month</p>
                     </div>
-                    <button  className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full w-full py-4 text-white font-bold'>Get Started Free</button>
+                    <button  className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full w-full py-4 text-white font-bold cursor-pointer'>Get Started Free</button>
                 </div>
                 <div className='p-6 border rounded-lg border-zinc-100 shadow mb-6 cursor-pointer space-y-6 bg-linear-to-r from-[#4F39F6] to-[#9916fe] text-white/80 relative'>
                 <span className='rounded-full bg-[#FEF3C6] text-sm text-[#BB4D00] font-medium px-3 py-2 absolute left-[33%] -top-4'>Most Popular</span>
@@ -42,7 +42,7 @@ const Pricing = () => {
                         <p className='flex gap-2 font-medium text-white'><i className="fa-solid fa-check text-xl"></i>Advanced analytics</p>
                     </div>
                     <button  className='bg-white
-                     rounded-full w-full py-4 text-white font-bold'><span className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>Get Started Free</span></button>
+                     rounded-full w-full py-4 font-bold cursor-pointer'><span className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>Get Started Free</span></button>
                 </div>
                 <div className='p-6 border rounded-lg border-zinc-100 shadow mb-6 cursor-pointer space-y-6'>
                     <div className='space-y-2'>
@@ -60,7 +60,7 @@ const Pricing = () => {
                         <p className='flex gap-2 font-medium text-[#627382]'><i className="fa-solid fa-check text-green-400 text-xl"></i>SLA guarantee</p>
                         <p className='flex gap-2 font-medium text-[#627382]'><i className="fa-solid fa-check text-green-400 text-xl"></i>Custom branding</p>
                     </div>
-                    <button  className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full w-full py-4 text-white font-bold'>Get Started Free</button>
+                    <button  className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full w-full py-4 text-white font-bold cursor-pointer'>Get Started Free</button>
                 </div>
 
             </div>

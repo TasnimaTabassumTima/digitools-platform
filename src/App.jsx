@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar.jsx'
 import Pricing from './Components/Pricing.jsx'
 import Stats from './Components/Stats.jsx'
 import Step from './Components/Step.jsx'
+import Workflow from './Components/Workflow.jsx'
 
 function App() {
 
@@ -25,13 +26,15 @@ function App() {
 
         <div className="max-w-[1200px] mx-auto">
           <Step/>
-        </div> */}
+        </div> 
 
         <div className="max-w-[1200px] mx-auto">
           <Pricing/>
+        </div> */}
+
+        <div className="bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
+          <Workflow/>
         </div>
-
-
 
         <div className="bg-[#101727]">
           <Footer/>
