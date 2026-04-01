@@ -3,7 +3,7 @@ import Package from '../assets/package.png';
 import User from '../assets/user.png';
 import Rocket from '../assets/rocket.png';
 
-const Start = () => {
+const Step = () => {
     return (
         <div className='space-y-10'>
             <div className='text-center space-y-4'>
@@ -46,4 +46,4 @@ const Start = () => {
     );
 };
 
-export default Start;
+export default Step;
